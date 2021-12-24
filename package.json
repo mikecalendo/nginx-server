@@ -1,0 +1,36 @@
+{
+  "name": "infastruture",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev -p 3004",
+    "vercel": "echo 'Running as Vercel serverless'; vercel dev --listen 3004",
+    "build": "next build",
+    "start": "next start -p 3004",
+    "test": "echo 'Running Standard.js and Jasmine unit tests...\n' && yarn lint && yarn unit",
+    "unit": "jasmine",
+    "lint": "standard",
+    "fix": "standard --fix",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "axios": "0.24.0",
+    "axios-mock-adapter": "1.20.0",
+    "next": "latest",
+    "next-pwa": "^5.4.4",
+    "next-redux-wrapper": "7.0.5",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-redux": "7.2.6",
+    "react-toastify": "8.1.0",
+    "redux": "4.1.2",
+    "redux-devtools-extension": "2.13.9"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.7"
+  }
+}
